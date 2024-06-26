@@ -1,10 +1,9 @@
 use anchor_lang::prelude::*;
-use anchor_lang::solana_program::system_program;
 
-declare_id!("6oE4QvenrBDTsw2hBvWhbYnz2VtVA6REJBr57M4ebGPQ");
+declare_id!("GpmX2Botpq52CLg27wbEXBEN2TCod67Jrovhdsgto455");
 
 #[program]
-pub mod solana_web3 {
+pub mod anchor_solana_transaction {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {

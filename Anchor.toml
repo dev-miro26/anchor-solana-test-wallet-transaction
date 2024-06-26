@@ -5,7 +5,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-solana_web3 = "6oE4QvenrBDTsw2hBvWhbYnz2VtVA6REJBr57M4ebGPQ"
+anchor_solana_transaction = "GpmX2Botpq52CLg27wbEXBEN2TCod67Jrovhdsgto455"
 
 [registry]
 url = "https://api.apr.dev"
@@ -16,3 +16,4 @@ wallet = "~/.config/solana/id.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+client = "yarn run ts-node client/*.ts"
