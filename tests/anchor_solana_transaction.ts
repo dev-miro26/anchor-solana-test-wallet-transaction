@@ -1,12 +1,12 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
-import { SolanaWeb3 } from "../target/types/solana_web3";
+import { AnchorSolanaTransaction } from "../target/types/anchor_solana_transaction";
 
-describe("solana-web3", () => {
+describe("anchor_solana_transaction", () => {
   // Configure the client to use the local cluster.
   anchor.setProvider(anchor.AnchorProvider.env());
 
-  const program = anchor.workspace.SolanaWeb3 as Program<SolanaWeb3>;
+  const program = anchor.workspace.AnchorSolanaTransaction as Program<AnchorSolanaTransaction>;
 
   it("Is initialized!", async () => {
     // Add your test here.
